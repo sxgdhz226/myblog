@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.fzqblog.mapper.SysMonitorMapper" >
+  <resultMap id="BaseResultMap" type="top.fzqblog.po.model.SysMonitorLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="date_time" property="dateTime_dt" jdbcType="DATE" />
+    <result column="next_time" property="nextTime_dt" jdbcType="DATE" />
+    <result column="result" property="result_i" jdbcType="INTEGER" />
+    <result column="result_desc" property="resultDesc_s" jdbcType="VARCHAR" />
+    <result column="target" property="target_s" jdbcType="VARCHAR" />
+    <result column="task_id" property="taskId_s" jdbcType="VARCHAR" />
+    <result column="task_name" property="taskName_s" jdbcType="VARCHAR" />
+    <result column="send_sms" property="sendSms_s" jdbcType="VARCHAR" />
+    <result column="parent_id" property="parentId_s" jdbcType="VARCHAR" />
+  </resultMap>
+
+<sql id="Base_Condition" >
+    <where >
+    	<if test="resultDesc!=null and resultDesc!=''">
+    		and result_desc = #{resultDesc}
+    	</if>
+    	<if test="target!=null and target!=''">
+    		and target = #{target}
+    	</if>
+    	<if test="taskName!=null and taskName!=''">
+    		and task_name = #{taskName}
+    	</if>
+    	<if test="null!= date_time and ''!= date_time">
+     		<![CDATA[ 
+     				and date_time >= STR_TO_DATE('${startDate} 00:00:00','%Y-%m-%d %H:%i:%s')
+     				]]>
+     	</if>
+     	 <if test="null!= next_time and ''!= next_time">
+     		<![CDATA[ 
+     				and next_time <= STR_TO_DATE('${endDate} 23:59:59', '%Y-%m-%d %H:%i:%s')
+     				]]>
+     	</if>
+    </where>
+  </sql>  
+  
+  <sql id="Base_Column_List" >
+    id,date_time,next_time,result,result_desc,target,task_id,task_name,send_sms,parent_id
+  </sql>
+
+   <select id="selectList" resultMap="BaseResultMap">
+  		select <include refid="Base_Column_List"/>
+  		  from sys_monitor_log <include refid="Base_Condition"/>
+  		<if test="null!= page">
+     		limit #{page.start},#{page.end}
+     	</if>
+  </select>
+
+
+
+</mapper>
