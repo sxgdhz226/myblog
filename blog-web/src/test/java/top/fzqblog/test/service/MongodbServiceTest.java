@@ -15,18 +15,18 @@ public class MongodbServiceTest extends AbstractTestNGSpringContextTests {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-//    @Test
-//    public void save(){
+    @Test
+    public void save(){
 
-//        try {
-//            SysMonitorLog log = new SysMonitorLog();
-//            log.setSendSms_s("测试");
-//            mongoTemplate.save(log);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        } finally {
-//        }
-//    }
+        try {
+            SysMonitorLog log = new SysMonitorLog();
+            log.setSendSms_s("测试");
+            mongoTemplate.save(log);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+        }
+    }
 
     public static void queryDataBase(){
         Mongo mg = MongoManger.getMongo();
