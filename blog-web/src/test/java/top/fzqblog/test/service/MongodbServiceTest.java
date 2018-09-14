@@ -18,7 +18,6 @@ public class MongodbServiceTest extends AbstractTestNGSpringContextTests {
     @Test
     public void save(){
 
-
         try {
             SysMonitorLog log = new SysMonitorLog();
             log.setSendSms_s("测试");
