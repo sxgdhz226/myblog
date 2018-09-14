@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="6c32816a-310c-4c35-b48e-38a5b14b08e9" name="Default" comment="s">
-      <change beforePath="$PROJECT_DIR$/FzqBlog.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/blog-admin.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog-common/blog-common.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog-web/blog-web.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog-web/src/test/java/top/fzqblog/test/service/MongodbServiceTest.java" afterPath="$PROJECT_DIR$/blog-web/src/test/java/top/fzqblog/test/service/MongodbServiceTest.java" />
-    </list>
+    <list default="true" readonly="true" id="6c32816a-310c-4c35-b48e-38a5b14b08e9" name="Default" comment="s" />
     <ignored path="$PROJECT_DIR$/blog-web/target/" />
     <ignored path="$PROJECT_DIR$/blog-admin/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +21,21 @@
   <component name="ChangesViewManager" flattened_view="false" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MongodbServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongodbServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-web/src/test/java/top/fzqblog/test/service/MongodbServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog-web/src/test/java/top/fzqblog/test/service/TestGit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -820,7 +824,7 @@
       <workItem from="1536735676810" duration="7866000" />
       <workItem from="1536816086472" duration="13960000" />
       <workItem from="1536886158631" duration="388000" />
-      <workItem from="1536908932703" duration="1093000" />
+      <workItem from="1536908932703" duration="1677000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1536909235552</created>
@@ -872,7 +876,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60634000" />
+    <option name="totallyTimeSpent" value="61218000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1062,13 +1066,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-common/src/main/java/top/fzqblog/po/model/SolrBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-common/src/main/java/top/fzqblog/service/KnowledgeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1414,6 +1411,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-web/src/test/java/top/fzqblog/test/service/TestGit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
